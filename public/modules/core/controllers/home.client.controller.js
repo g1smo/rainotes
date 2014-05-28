@@ -31,7 +31,6 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
         init();
         function init() {
             paper.install(window);
-            debugger;
 
             paper.setup('draw-area');
         }
