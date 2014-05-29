@@ -6,33 +6,43 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
         var path;
         var drawing = false;
 
-        // This provides Authentication context.
-        $scope.authentication = Authentication;
-
-        $scope.mouseDown = function(ev) {
-            path = new paper.Path();
-            path.strokeColor = 'black';
-            path.add(new paper.Point(ev.offsetX, ev.offsetY));
-            drawing = true;
-        };
-
-        $scope.mouseUp = function(ev) {
-            path.simplify();
-            console.log(path);
-            drawing = false;
-        };
-
-        $scope.mouseMove = function(ev) {
-            if (drawing === true) {
-                path.add(new paper.Point(ev.offsetX, ev.offsetY));
-                path.smooth();
-            }
-        };
-        init();
         function init() {
             paper.install(window);
 
             paper.setup('draw-area');
         }
+
+        function getCoordinates(ev) {
+            if (ev.gesture) {
+                return [ev.gesture.center.clientX, ev.gesture.center.clientY];
+            } else {
+                return [ev.offsetX, ev.offsetY];
+            }
+        }
+
+        // This provides Authentication context.
+        $scope.authentication = Authentication;
+
+        $scope.drawStart = function(ev) {
+            path = new paper.Path();
+            path.strokeColor = 'black';
+
+            path.add(new paper.Point(getCoordinates(ev)));
+            drawing = true;
+        };
+
+        $scope.drawFinish = function() {
+            path.simplify();
+            drawing = false;
+        };
+
+        $scope.drawPath = function(ev) {
+            if (drawing === true) {
+                path.add(new paper.Point(getCoordinates(ev)));
+                path.smooth();
+            }
+        };
+
+        init();
     }
 ]);
