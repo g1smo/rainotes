@@ -39,7 +39,7 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
         $scope.drawPath = function(ev) {
             if (drawing === true) {
                 path.add(new paper.Point(getCoordinates(ev)));
-                path.smooth();
+                //path.smooth();
             }
         };
 
