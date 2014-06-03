@@ -11,18 +11,6 @@ html {
 .content {
     margin-top: 50px;
     width: 100%;
-    height: 100%;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-section {
-    height: 100%;
 }
 
 h1.welcome {
@@ -40,9 +28,11 @@ h1.welcome {
 }
 
 canvas#draw-area {
-    height: 100%;
-    width: 100%;
     cursor: default;
+
+    position:fixed;
+    top: 50px;
+    left: 0px;
 }
 
 a.navbar-brand {

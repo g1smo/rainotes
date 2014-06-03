@@ -28,7 +28,9 @@ module.exports = {
                 'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
                 'public/lib/paper/dist/paper-full.js',
                 'public/lib/hammerjs/hammer.js',
-                'public/lib/angular-hammer/angular-hammer.js'
+                'public/lib/angular-hammer/angular-hammer.js',
+                'public/lib/underscore/underscore.js',
+                'public/lib/jquery/dist/jquery.js'
             ]
         },
         css: [
