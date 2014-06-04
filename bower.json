@@ -17,6 +17,8 @@
         "paper": "latest",
         "angular-hammer": "1.0.3",
         "underscore": "1.6.0",
-        "jquery": "2.1.1"
+        "jquery": "1.11.1",
+        "jquery-minicolors": "2.1.6",
+        "nouislider": "6.0.0"
     }
 }

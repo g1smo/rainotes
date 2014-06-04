@@ -1,4 +1,6 @@
 <section data-ng-controller="HomeController">
     <h1 class="welcome">Hello. Feel free to draw around.</h1>
-    <canvas id="draw-area" drawing-init hm-dragstart="drawStart($event)" hm-dragend="drawFinish($event)" hm-drag="drawPath($event)">
+    <canvas id="draw-area" drawing-init hm-dragstart="drawStart($event)" hm-dragend="drawFinish($event)" hm-drag="drawPath($event)"></canvas>
+    <div id="colorpick" color-picker ng-model="color"></div>
+    <div id="size-slider" size-slider ng-mode="size"></div>
 </section>

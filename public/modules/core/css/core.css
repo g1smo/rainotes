@@ -44,3 +44,36 @@ a.navbar-brand > img {
     margin-top: -8px;
     margin-left: 6px;
 }
+
+div#colorpick {
+    display: none;
+}
+
+.minicolors-swatch {
+    position: fixed;
+    top: 50px !important;
+    left: -1px !important;
+    width: 35px !important;
+    height: 35px !important;
+    border-bottom-right-radius: 40px;
+    box-shadow:rgba(0,0,0,0.8) 0px 0px 24px;
+    border: none;
+    cursor: pointer;
+
+}
+.minicolors-swatch-color {
+    border-bottom-right-radius: 40px;
+    width: 102%;
+    height: 102%;
+}
+.minicolors-panel {
+    left: -36px !important;
+    top: 23px !important;
+}
+
+div#size-slider {
+    position: fixed;
+    top: 120px;
+    left: 12px;
+    height: 300px;
+}

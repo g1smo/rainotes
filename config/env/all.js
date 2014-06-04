@@ -15,6 +15,8 @@ module.exports = {
             css: [
                 'public/lib/bootstrap/dist/css/bootstrap.css',
                 'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+                'public/lib/jquery-minicolors/jquery.minicolors.css',
+                'public/lib/nouislider/jquery.nouislider.css'
             ],
             js: [
                 'public/lib/angular/angular.js',
@@ -30,7 +32,9 @@ module.exports = {
                 'public/lib/hammerjs/hammer.js',
                 'public/lib/angular-hammer/angular-hammer.js',
                 'public/lib/underscore/underscore.js',
-                'public/lib/jquery/dist/jquery.js'
+                'public/lib/jquery/dist/jquery.js',
+                'public/lib/jquery-minicolors/jquery.minicolors.js',
+                'public/lib/nouislider/jquery.nouislider.js'
             ]
         },
         css: [
