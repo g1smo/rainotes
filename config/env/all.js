@@ -34,7 +34,8 @@ module.exports = {
                 'public/lib/underscore/underscore.js',
                 'public/lib/jquery/dist/jquery.js',
                 'public/lib/jquery-minicolors/jquery.minicolors.js',
-                'public/lib/nouislider/jquery.nouislider.js'
+                'public/lib/nouislider/jquery.nouislider.js',
+                'public/lib/backbone/backbone.js'
             ]
         },
         css: [
