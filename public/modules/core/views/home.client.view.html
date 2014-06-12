@@ -1,6 +1,9 @@
 <section data-ng-controller="HomeController">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <h1 class="welcome">Hello. Feel free to draw around.</h1>
-    <canvas id="draw-area" drawing-init hm-dragstart="drawStart($event)" hm-dragend="drawFinish($event)" hm-drag="drawPath($event)"></canvas>
+    <canvas id="draw-area" drawing-init paint-cursor hm-touch="dragStart($event)"
+        hm-dragend="dragFinish($event)" hm-drag="dragPath($event)"
+        msd-wheel="mouseScroll($event)" ng-mousemove="mouseMove($event)" ng-click="mouseClick($event)"></canvas>
     <div id="colorpick" color-picker ng-model="color"></div>
     <div id="size-slider" size-slider ng-mode="size"></div>
 </section>

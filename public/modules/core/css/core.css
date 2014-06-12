@@ -77,3 +77,11 @@ div#size-slider {
     left: 12px;
     height: 300px;
 }
+
+div#paint-cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    pointer-events: none;
+}

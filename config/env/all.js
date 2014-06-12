@@ -35,7 +35,8 @@ module.exports = {
                 'public/lib/jquery/dist/jquery.js',
                 'public/lib/jquery-minicolors/jquery.minicolors.js',
                 'public/lib/nouislider/jquery.nouislider.js',
-                'public/lib/backbone/backbone.js'
+                'public/lib/backbone/backbone.js',
+                'public/lib/angular-mousewheel/mousewheel.js'
             ]
         },
         css: [

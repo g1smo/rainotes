@@ -20,6 +20,7 @@
         "jquery": "1.11.1",
         "jquery-minicolors": "2.1.6",
         "nouislider": "6.0.0",
-        "backbone": "1.1.2"
+        "backbone": "1.1.2",
+        "angular-mousewheel": "1.0.4"
     }
 }
